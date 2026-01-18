@@ -18,5 +18,4 @@ specifically how port scanning works.
 - Socket library
 
 ## How to Run
-'''bash
 python3 port_scanner.py
