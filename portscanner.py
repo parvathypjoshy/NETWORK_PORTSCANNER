@@ -29,4 +29,10 @@ def portScan(tgtHost, tgtPorts):
         conScan(tgtHost, tgtPort)
 
 if __name__ == "__main__":
-    portScan("google.com", [80, 22])
+    # Take user input
+    target = input("Enter target domain or IP: ")
+
+    ports_input = input("Enter ports to scan (comma separated): ")
+    ports = [int(port.strip()) for port in ports_input.split(",")]
+
+    portScan(target, ports)
